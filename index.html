@@ -156,13 +156,6 @@ const fib = (n) => {
         </ul>
         <ol>
           <li>They keep things organized</li>
-          <ul>
-            <li>Not only can they list ideas, they can list sub-ideas</li>
-            <ul>
-              <li>Even sub-ideas of those sub-ideas</li>
-            </ul>
-            <li>Lists have structure</li>
-          </ul>
           <li>People are very familiar with lists</li>
           <li>They allow you to complete the assignment</li>
           <li>Need I say more?</li>
@@ -198,10 +191,10 @@ const fib = (n) => {
             <input type="text" id="fname" name="fname" /><br /><br />
             <label for="fname">Choose a color:</label><br />
             <input type="color" /><br /><br />
-            <input type="radio" id="Red Pill" name="pill" value="Red Pill" />
-            <label for="Red Pill">Red Pill</label><br/ >
-            <input type="radio" id="Blue Pill" name="pill" value="Blue Pill" />
-            <label for="Blue Pill">Blue Pill</label><br />
+            <input type="radio" id="redpill" name="pill" value="Red Pill" />
+            <label for="redpill">Red Pill</label><br />
+            <input type="radio" id="bluepill" name="pill" value="Blue Pill" />
+            <label for="bluepill">Blue Pill</label><br />
             <input type="submit" value="Submit" /><br /><br />
             <label for="date">What is your favorite date?</label><br />
             <input type="date" id="date" name="date" /> <br /><br />
@@ -209,7 +202,7 @@ const fib = (n) => {
               >Alright, but what about your favorite date and time?</label
             >
             <br />
-            <input type="datetime-local" /> <br />
+            <input id="date-time" type="datetime-local" /> <br />
             <br />
             <label for="email">What is your favorite email address?</label
             ><br />
@@ -221,7 +214,7 @@ const fib = (n) => {
           </fieldset>
           <br />
           <label for="choices">Pick your favorite number:</label>
-          <select name="three" id="three">
+          <select id="choices" name="three" id="three">
             <optgroup label="Numbers Less Than Three">
               <option value="one">One</option>
               <option value="two">Two</option>
@@ -239,7 +232,7 @@ const fib = (n) => {
             infinity and infinity</label
           >
           <br />
-          <input type="range" />
+          <input id="range" type="range" />
           <br />
           <br />
           <label for="textbox"
@@ -249,7 +242,7 @@ const fib = (n) => {
             >I personally don't remember that many poems, so feel free to search
             one up!</label
           >
-          <input type="search" />
+          <input id="search" type="search" />
           <br />
           <br />
           <p>
@@ -259,7 +252,7 @@ const fib = (n) => {
           <br /><br />
           <label for="animals"> Choose your favorite animal group: </label>
           <br />
-          <input list="animals" name="animals" id="animals" />
+          <input list="animals" name="animals" id="animallist" />
           <datalist id="animals">
             <option value="Mammals"></option>
             <option value="Reptiles"></option>
