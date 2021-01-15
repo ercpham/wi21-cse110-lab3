@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eric Pham</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="empty.css" />
+  </head>
+
+  <body>
+    <template>
+      <p>
+        I'm going to be honest, I have no clue where to put this in the site
+        because it won't be seen anyways. I'll put it in the front to show you
+        that I've used it.
+      </p>
+    </template>
+    <header>
+      <h1>Welcome to ercpham's homepage!</h1>
+      <h2>This is the GitHub pages for CSE 110 Lab 2</h2>
+    </header>
+
+    <hr />
+    <main>
+      <h2>
+        Hello! My name is Eric, and this is my GitHub page for my CSE 110
+        assignment
+      </h2>
+
+      <nav>
+        <h3>Section Links</h3>
+        <span>
+          <a href="#me">About Me</a>
+          <a href="#assign">Completing the Assignment</a>
+          <a href="#code">Code</a>
+          <a href="#lists">Lists</a>
+          <a href="#TODO">TODO</a>
+        </span>
+      </nav>
+      <br />
+      <section id="me">
+        <h3>About Me</h3>
+        <div>
+          <picture>
+            <source srcset="profilepic.jpg" media="(min-width:400px)" />
+            <img src="profilepic.jpg" alt="Profile" width="600" />
+          </picture>
+          <p>
+            This is a rather large picture of myself. I don't update it very
+            often, but you can find more pictures of me
+            <a href="https://www.instagram.com/the_eric_pham/"
+              >on my Instagram</a
+            >
+          </p>
+        </div>
+        <iframe
+          src="iframe.html"
+          title="ig page"
+          height="200"
+          width="500"
+          name="iframe"
+        ></iframe>
+        <p>In a similar spirit, here is a blank canvas:</p>
+        <canvas id="canvas" width="500" height="100"></canvas>
+        <p>
+          Unfortunately, we can't use javascript yet, so this canvas will remain
+          blank for now
+        </p>
+        <p>However, we are able to draw (kind of) with SVG!</p>
+        <svg width="500" height="300">
+          <rect
+            x="50"
+            y="20"
+            rx="20"
+            ry="20"
+            width="200"
+            height="200"
+            style="fill: blue"
+          />
+        </svg>
+        <p>Such a beautiful rectangle.</p>
+      </section>
+
+      <section id="assign">
+        <h3>Completing the Assignment</h3>
+        <div>
+          <p>
+            The requirements for this assignment specify <i>"Pictures"</i> in
+            plural, so I guess I'll add another one.
+          </p>
+          <figure>
+            <img src="howling.jpg" alt="Chicken Sandwich" width="600" />
+            <figcaption>A good looking chicken sandwich.</figcaption>
+          </figure>
+          <p>
+            That's a <em>good looking chicken sandwich</em>. It was from
+            <b>Howling Ray's in L.A.</b> I highly recommend, probably the best
+            chicken sandwich I've ever had.
+          </p>
+          <details>
+            <summary>Click here for a surprise...</summary>
+            <p>Surprise!</p>
+          </details>
+          <br />
+          <button type="button">Click here for no reason!</button>
+        </div>
+        <div>
+          <p>
+            The requirements for this assignment also specify audio, so umm I
+            guess I'll pull some random mp3 from the internet.
+          </p>
+          <audio controls>
+            <source src="music.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div>
+          <p>
+            I'm going to do the same thing with a video too. This one is of
+            espresso. I like coffee. It is very yummy
+          </p>
+          <video width="500" height="300" autoplay loop>
+            <source src="coffee.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section id="code">
+        <h3>Code</h3>
+        <div>
+          <p>
+            I'm currently pursuing a B.S. so naturally, <strong>I code.</strong>
+          </p>
+          <p>
+            Here’s a block of code for the extremely slow way to get the nth
+            number from the Fibonnaci sequence.
+          </p>
+          <pre>
+            <code>
+const fib = (n) => {
+    if (n === 1)
+        return 1;
+    if (n === 2)
+        return 1;
+    return fib(n-1) + fib(n-2);
+}
+            </code>
+          </pre>
+          <p>What a <s>great</s> demonstration of my skills</p>
+        </div>
+      </section>
+
+      <section id="lists">
+        <h3>Lists</h3>
+        <ul>
+          <li>Lists were invented about 200 years ago</li>
+          <li>That point above is definitely not true</li>
+        </ul>
+        <ol>
+          <li>They keep things organized</li>
+          <ul>
+            <li>Not only can they list ideas, they can list sub-ideas</li>
+            <ul>
+              <li>Even sub-ideas of those sub-ideas</li>
+            </ul>
+            <li>Lists have structure</li>
+          </ul>
+          <li>People are very familiar with lists</li>
+          <li>They allow you to complete the assignment</li>
+          <li>Need I say more?</li>
+        </ol>
+      </section>
+
+      <section id="TODO">
+        <div>
+          <input type="checkbox" id="page" name="page" checked />
+          <label for="page">Finish this page</label>
+        </div>
+        <div>
+          <input type="checkbox" id="job" name="job" />
+          <label for="job">Get a job</label>
+        </div>
+        <div>
+          <input type="checkbox" id="lunch" name="lunch" checked />
+          <label for="job">Eat lunch</label>
+        </div>
+      </section>
+      <section id="form">
+        <h3>Form</h3>
+        <p>
+          You guys asked for 10 inputs, so I'll just put them all here. I don't
+          really have the time to be creative and make all of these fit all
+          across the page. Of course, they won't be submitted anywhere. Or will
+          it?
+        </p>
+        <form>
+          <fieldset>
+            <legend>Some random inputs:</legend>
+            <label for="fname">Name:</label><br />
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label for="fname">Choose a color:</label><br />
+            <input type="color" /><br /><br />
+            <input type="radio" id="Red Pill" name="pill" value="Red Pill" />
+            <label for="Red Pill">Red Pill</label><br/ >
+            <input type="radio" id="Blue Pill" name="pill" value="Blue Pill" />
+            <label for="Blue Pill">Blue Pill</label><br />
+            <input type="submit" value="Submit" /><br /><br />
+            <label for="date">What is your favorite date?</label><br />
+            <input type="date" id="date" name="date" /> <br /><br />
+            <label for="date-time"
+              >Alright, but what about your favorite date and time?</label
+            >
+            <br />
+            <input type="datetime-local" /> <br />
+            <br />
+            <label for="email">What is your favorite email address?</label
+            ><br />
+            <input type="email" id="email" name="email" /><br /><br />
+            <label for="file"
+              >You can upload a meme or something. I won't see it.</label
+            ><br />
+            <input type="file" id="file" name="file" /><br />
+          </fieldset>
+          <br />
+          <label for="choices">Pick your favorite number:</label>
+          <select name="three" id="three">
+            <optgroup label="Numbers Less Than Three">
+              <option value="one">One</option>
+              <option value="two">Two</option>
+            </optgroup>
+            <optgroup label="Numbers Greater Than Two">
+              <option value="three">Three</option>
+              <option value="four">Four</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+          <label for="range"
+            >It's kind of unfair that I only gave you four choices. Use the
+            slider to approximately choose your favorite number between negative
+            infinity and infinity</label
+          >
+          <br />
+          <input type="range" />
+          <br />
+          <br />
+          <label for="textbox"
+            >What's your favorite poem? Share it with me here!</label
+          >
+          <label for="search"
+            >I personally don't remember that many poems, so feel free to search
+            one up!</label
+          >
+          <input type="search" />
+          <br />
+          <br />
+          <p>
+            Oh sorry, that search input doesn't actually do anything. My bad.
+          </p>
+          <textarea id="textbox" name="textbox" rows="30" cols="50"> </textarea>
+          <br /><br />
+          <label for="animals"> Choose your favorite animal group: </label>
+          <br />
+          <input list="animals" name="animals" id="animals" />
+          <datalist id="animals">
+            <option value="Mammals"></option>
+            <option value="Reptiles"></option>
+            <option value="Birds"></option>
+            <option value="Fish"></option>
+            <option value="Amphibians"></option>
+          </datalist>
+          <table style="width: 50%">
+            <caption>
+              Class Information
+            </caption>
+            <colgroup>
+              <col style="background-color: aliceblue" />
+              <col style="background-color: rgb(209, 255, 255)" />
+              <col style="background-color: aliceblue" />
+            </colgroup>
+            <tr>
+              <th>Class</th>
+              <th>Rating out of 10</th>
+              <th>Days</th>
+            </tr>
+            <tr>
+              <td>CSE 110</td>
+              <td>10/10</td>
+              <td>Mon, Wed</td>
+            </tr>
+            <tr>
+              <td>POLI 28</td>
+              <td>4/10</td>
+              <td>Mon, Wed</td>
+            </tr>
+            <tr>
+              <td>CSE 130</td>
+              <td>8/10</td>
+              <td>Tues, Thurs</td>
+            </tr>
+            <tr>
+              <td>CSE 101</td>
+              <td>8/10</td>
+              <td>Tues, Thurs</td>
+            </tr>
+          </table>
+        </form>
+      </section>
+      <footer>
+        <p>Contact me at my email: e9pham@ucsd.edu</p>
+      </footer>
+    </main>
+  </body>
+</html>
