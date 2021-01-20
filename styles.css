@@ -1,0 +1,7 @@
+h1, h2 {
+    text-align: center;
+}
+
+ol, ul, li {
+    list-style-position: inside;
+}
