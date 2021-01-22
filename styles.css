@@ -1,7 +1,9 @@
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -21,15 +23,17 @@ body {
 
 header {
     align-self: start;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 footer {
     align-self: end;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
 /* Centering the headers */
-h1, h2{
+
+h1, h2 {
     text-align: center;
     font-size: 2em;
 }
@@ -79,7 +83,7 @@ video {
 }
 
 label.blue {
-    color:hsl(240, 100%, 50%); 
+    color: hsl(240, 100%, 50%);
 }
 
 label.red {
@@ -99,7 +103,7 @@ input[type="radio"] {
     vertical-align: top;
 }
 
-input + label {
+input+label {
     display: inline-block;
     vertical-align: top;
     margin-right: 3%;
@@ -118,29 +122,38 @@ a:visited {
     color: rgba(1, 1, 160, 0.6);
 }
 
+a:active {
+    color: darkred;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-fieldset > div {
+fieldset>div {
     display: flex;
     width: 10em;
-}
-
-fieldset > * {
-
 }
 
 fieldset label {
     font-size: 1.2em;
 }
 
-fieldset > input {
-    height: 2em; 
+fieldset>input {
+    height: 2em;
 }
 
-picture ~ p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+picture~p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        background-color: white;
+    }
+    .seclink, h1, h2, h3 {
+        font-size: 1em;
+    }
 }
