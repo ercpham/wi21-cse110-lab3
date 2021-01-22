@@ -7,17 +7,49 @@
 html {
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 1cm;
+    padding-bottom: 10px;
     background-color: lightsteelblue;
 }
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2% auto 2%;
+    align-items: center;
+}
+
+header {
+    align-self: start;
+    background-color: rgba(0,0,0,0.1);
+}
+
+footer {
+    align-self: end;
+    background-color: rgba(0,0,0,0.1);
+}
 /* Centering the headers */
-h1, h2 {
+h1, h2{
     text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-top: .5em;
 }
 
 ol, ul, li {
     list-style-position: inside;
+    margin-top: .1em;
+    margin-bottom: .1em;
+    margin-left: .2em;
+    margin-right: .2em;
+}
+
+p {
+    padding: 5pt 0pt 5pt 0pt;
+    position: relative;
 }
 
 img, video {
@@ -25,10 +57,20 @@ img, video {
     border-color: black;
     border-width: .2em;
     border-radius: 2%;
+    margin: auto;
+    display: block;
+    position: static;
+    max-width: 80%;
+    min-width: 30%;
+}
+
+video {
+    width: 59vmin;
 }
 
 .seclink {
     font-size: 2em;
+    margin: .1em .1em .1em .5em;
 }
 
 .secspan {
@@ -74,6 +116,21 @@ a:hover {
 
 a:visited {
     color: rgba(1, 1, 160, 0.6);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+fieldset > div {
+    display: flex;
+    width: 10em;
+}
+
+fieldset > * {
+
 }
 
 fieldset label {
