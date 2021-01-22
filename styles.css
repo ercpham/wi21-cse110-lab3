@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 /* Centering the headers */
 h1, h2 {
     text-align: center;
@@ -5,4 +17,65 @@ h1, h2 {
 
 ol, ul, li {
     list-style-position: inside;
+}
+
+.seclink {
+    font-size: 2em;
+}
+
+.secspan {
+    display: flex;
+    flex-direction: column;
+}
+
+label.blue {
+    color: blue;
+}
+
+label.red {
+    color: red;
+}
+
+#me {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 15em;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    vertical-align: top;
+}
+
+input + label {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgba(1, 1, 160, 0.6);
+}
+
+fieldset label {
+    font-size: 1.2em;
+}
+
+fieldset > input {
+    height: 2em; 
+}
+
+picture ~ p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
